@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 1px solid black;
+
+            /* marking overflow auto will prevent from the great collapse */
+            overflow: auto;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+            padding: 2px;
+            background-color: blanchedalmond;
+            border: 1px solid black;
+
+            /* marking float will cause "the great collapse" that is parent element is collapsed*/
+            float: left;
+        }
+        #item3{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item" id="item3">C</div>
+    </div>
+</body>
+</html>

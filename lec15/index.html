@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* universal selector * selects all the elements in the document */
+        /* putting padding and margin to 0 for all elements to remove default spacing */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            background-color: chocolate;
+
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+
+            /* border-radius: 50px; */
+
+            /* border-left: 15px solid black; */
+
+            /* height: 100px;
+            width: 200px; */
+        }
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            color: darkblue;
+            background-color: lightgray;
+            
+            /* height and width properties won't work on inline elements like span */
+            height: 100px;
+            width: 200px;
+        }
+        .firstPara{
+            background-color: blanchedalmond;
+            border: black solid 1px;
+
+            /* padding is the space between the content and the border of an element.
+            It creates a gap between the content and the border, providing visual separation and
+            improving readability. */
+            /* padding: 10px; */
+
+            /* margin is the space outside the border of an element.
+            It creates a gap between the element and other elements on the page, providing visual separation
+            and improving layout. */
+            /
+        }
+        .secondPara{
+            background-color: aquamarine;
+            border: black solid 1px;
+            /* padding: 20px; */
+            /* margin: 20px; */
+
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px; */
+
+            /* shortcut for the above four properties */
+            /* padding: 10px 20px 30px 40px; */
+        }
+        .thirdPara{
+            background-color: beige;
+            border: black solid 1px;
+            /* padding: 30px;
+            margin: 30px; */
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to My Website</h1>
+
+    <span>My name is Sahil Rai.</span>
+
+    <p class="firstPara">This is a sample paragraph on my website.</p>
+
+    <p class="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, accusamus.</p>
+
+    <p class="thirdPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Libero voluptates nulla cupiditate repellat, possimus beatae.</p>
+
+</body>
+</html>

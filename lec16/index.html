@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Universal selector */
+        * {
+            /* 'box-sizing: border-box' means the element’s width and height include padding and border,
+            so the total size stays fixed. */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: black 2px solid;
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+
+            /* converts the block level element to inline element */
+            display: inline;
+        }
+        span{
+            border: red 2px solid;
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+
+            /* convert the inline element to block level element */
+            /* display: block; */
+
+            /* mixture of both inline and block level element */
+            display: inline-block;
+        }
+        /* div{
+            background-color: lightblue; */
+            /* height: 50px;
+            width: 200px; */
+            /* border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }  */
+    </style>
+</head>
+<body>
+
+    <!-- example of block level elements : div, p, h1, ul, ol, table, section, article, nav, footer, header -->
+    <!-- <div>Welcome to my website!</div>
+    <div>Welcome back!</div> -->
+
+    <div class="box">
+        Welcome to my website!
+    </div>
+
+    <!-- example of inline elements : span, a, img, strong, em, b, i, u -->
+    <span>This is an inline element.</span>
+    <span>Welcome back!</span>
+
+</body>
+</html>

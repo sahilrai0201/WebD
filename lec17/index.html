@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img {
+            /* border: 2px solid black; */
+            margin: 10px;
+        }
+        .image2{
+            /* relative positioning example */
+            /* relative positioning is done with respect to its normal position */
+            /* position: relative; */
+            
+            /* absolute positioning is done with respect to its nearest positioned ancestor */
+            /* position: absolute; */
+            top: 40px;
+            left: 20px;
+        }
+        .container{
+            position: relative;
+            height: 1500px;
+            margin: 1px;
+        }
+        .image3{
+            /* Sticky positioning is a hybrid of relative and fixed positioning.
+            An element with sticky positioning toggles between relative and fixed. 
+            It shows its sticky behavior in its parent container only*/
+            position: sticky;
+            top: 100px;
+        }
+        .image4{
+            /* Fixed positioning is done with respect to the viewport */
+            /* It shows the element at the same place even when we scroll */
+            position: fixed;
+        }
+
+        .box{
+            background-color: aquamarine;
+            height: 750px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- By default, position of an element is static. 
+    It means that the element will be placed in the normal flow of the document. 
+    The top, right, bottom, left properties will have no effect on a statically positioned element. -->
+
+    <div class="container">
+        <img src="cat1.webp" alt="cat1" height="200px" width="300px" class="image1">
+        <img src="cat2.webp" alt="cat2" height="200px" width="300px" class="image2">
+        <img src="cat3.webp" alt="cat3" height="200px" width="300px" class="image3">
+        <img src="cat4.webp" alt="cat4" height="200px" width="300px" class="image4">
+    </div>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>
