@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            height: 80px;
+            width: 350px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid black;
+
+            /* position: relative positions an element relative to its normal position while keeping its 
+            original space in the layout */
+            position: relative;
+
+            /* The animation-name property in CSS is used to tell an element which @keyframes animation to run */
+            /* animation-name: rightMovement; */
+
+            /* animation-duration in CSS defines how long an animation takes to complete one full cycle */
+            /* animation-duration: 7s; */
+
+            /* animation-iteration-count in CSS specifies how many times an animation should repeat */
+            /* animation-iteration-count: 1; */
+
+            /* animation-delay in CSS specifies how long the browser waits before starting an animation */
+            /* animation-delay: 1s; */
+
+            /* It means the animation runs at a constant speed from start to end — no slow start, no slow end */
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out; */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+
+            /* animation-direction in CSS controls which direction the animation plays each time it runs */
+            /* animation-direction: alternate; */
+
+            /* animation-fill-mode in CSS controls what styles are applied to an element before and after 
+            the animation runs */
+            /* animation-fill-mode: forwards; */
+
+            /* default behavior */
+            /* animation-fill-mode: backwards; */
+
+            /* shorthand notation */
+            /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+            animation : 5s linear 1s infinite alternate none running rightMovement;
+        }
+
+        /* The @keyframes rule in CSS is used to define the steps of an animation — 
+        it tells the browser how an element should change over time. */
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1100px;
+            }
+        }
+
+        #box2{
+            height: 80px;
+            width: 350px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid black;
+            position: relative;
+            animation : 5s linear 1s infinite alternate none running leftMovement; 
+        }
+        @keyframes leftMovement{
+            from{
+                top: 500px;
+                left: 1100px;
+            }
+            to{
+                top: 500px;
+                left: 0;
+            }
+        }
+
+        #circle{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 50px;
+            margin: 10px;
+            border: 3px solid yellow;
+            position: relative;
+            top: 15%;
+            left: 43%;
+            animation : 10s ease-in-out 0s infinite alternate none running circleMovement; 
+        }
+        @keyframes circleMovement{
+            0%{
+                top: 1%;
+                left: 1%;
+            }
+            30%{
+                top: 1%;
+                left: 90%;
+            }
+            60%{
+                top: 40%;
+                left: 1%;
+            }
+            100%{
+                top: 40%;
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+        <div id="box2"></div>
+        <div id="circle"></div>
+    </div>
+
+</body>
+</html>
