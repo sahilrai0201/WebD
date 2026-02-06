@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+            height: 700px;
+
+            /* by default, direction of flex box is row thus the direction of boxes will be changed from col to row */
+            display: flex;
+
+            /* again direction will be changed to col wise */
+            /* flex-direction: column; */
+
+            flex-direction: row;
+            /* flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+
+            /* by using wrap, items will maintain their size until space is available */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap;
+            flex-wrap: wrap-reverse; */
+
+            /* flex-flow: column;
+            flex-flow: row;
+            flex-flow: row-reverse; */
+
+            /* centre: places the items in the centre */
+            /* justify-content: center;
+            justify-content: baseline;
+            justify-content: end;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: space-between; */
+            justify-content: start;
+
+            /* align-items: works with respect to cross axis */
+            align-items: start;
+            /* align-items: end;
+            align-items: center; */
+
+            /* by default, items are stretched. remove box height to see */
+            /* align-items: stretch; */
+
+            /* vertically centre */
+            /* align-items: center;     */
+            /* horizontally centre */
+            /* justify-content: center;    */
+
+            /* sets the distribution of space between and around content items */
+            align-content: start;
+        }
+        .box{
+            /* height: 100px;
+            width: 100px; */
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+
+            /* helps to change the sequence of flex item */
+            /* order: 500; */
+
+            /* box1 will shrink four times greater than other boxes */
+            /* flex-shrink: 4; */
+
+            /* box1 will be self aligned to the centre position */
+            align-self: center;
+        }
+        #box2{
+            background-color: blue;
+
+            /* flex-grow: 5; */
+
+            /* box2 will be self aligned to the end position */
+            align-self: end;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: yellow;
+
+            /* helps to change the sequence of flex item */
+            /* order: -1; */
+
+            /* helps to set the dimensions */
+            /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
