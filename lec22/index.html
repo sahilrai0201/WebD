@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* custom variable marked in root can be utilised anywhere in the code */
+            --primary-color : brown;
+            --custom-width : 400px;
+        }
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            height: 500px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* custom variables - can be utilised in box only */
+            /* --primary-color : brown;
+            --custom-width : 400px; */
+
+            border: 1px solid var(--primary-color);
+            background-color: yellowgreen;
+            height: 400px;
+            width: var(--custom-width);
+            margin: 5px;
+            padding: 5px;
+
+            /* That line adds a shadow behind an element 👇 */
+            /* box-shadow: 10px 15px brown; */
+            /* box-shadow: -10px -15px brown; */
+
+            /* box shadow using blur radius */
+            /* blur radius should always be positive that is 5px taken over here */
+            /* box-shadow: 10px 15px 5px brown; */
+
+            /* adding spread radius alongwith blur radius */
+            /* box-shadow: 10px 15px 5px 20px brown; */
+
+            /* shadow will come inside now */
+            /* box-shadow: inset 10px 15px yellow; */
+
+            /* any number of shadows separated by comma */
+            box-shadow: 5px 8px green, 10px 15px red;
+        }
+
+        img{
+            height: 200px;
+            width: 400px;
+        }
+        #head1{
+            /* adding text shadow */
+            /* x offset, y offset, blur radius, color */
+            /* text-shadow: 5px 6px 1px white; */
+
+            /* by default, shadow color is black */
+            text-shadow: 5px 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="cat3.webp">
+
+            <h2 id="head1">Welcome to my Website</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum, voluptas blanditiis 
+                rem deserunt iste quisquam expedita fugiat explicabo delectus!</p>    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti asperiores explicabo 
+                assumenda corporis vitae velit aut, rerum dolore quaerat!</p>
+        </div>
+
+    </div>
+</body>
+</html>
