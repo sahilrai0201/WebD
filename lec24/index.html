@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+
+            /* Every CSS property that changes will transition smoothly */
+            /* transition-property: all; */
+
+            /* Only the width property will animate smoothly when it changes */
+            /* transition-property: width; */
+
+            /* transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function: linear; */
+
+            /* shorthand notation */
+            /* transition: properties|duration|easing function|delay */
+            /* transition: all 3s ease-in-out 2s; */
+
+            /* transition function for multiple properties */
+            transition: width 5s, height 2s;
+        }
+        .box:hover{
+            width: 1500px;
+            height: 600px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>
