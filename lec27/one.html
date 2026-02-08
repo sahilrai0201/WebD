@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid black;
+            background-color: #8bc6ec;
+            background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+        }
+        .box{
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 20px;
+            gap: 25px;
+
+            height: 80%;
+            width: 25%;
+
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+        }
+        .box img{
+            height: 30%;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 75%;
+            text-align: center;
+        }
+        #amountBox{
+            width: 80%;
+            height: 10%;
+            background-color: #69a2c9;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        #paymentButton{
+            width: 80%;
+            height: 9%;
+            background-color: rgb(18, 18, 152);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .cancelBox a{
+            text-decoration: none;
+            color: rgb(66, 61, 61);
+            font-weight: bold;
+            font-size: large;
+        }
+        #leftBox{
+            /* width: fit-content; */
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .imgBox img{
+            height: 3rem;
+            width: 3rem;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+
+            <img src="image.webp">
+
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus, 
+                    provident error porro ab delectus vel. Perferendis!</p>
+            </div>
+
+            <div id="amountBox">
+                <div id="leftBox">
+
+                    <div class="imgBox">
+                        <img src="Music.webp">
+                    </div>
+
+                    <div class="paraBox">
+                        <p>Annual Plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+
+                <div class="rightBox">
+                    <a href="#change#">Change</a>
+                </div>
+            </div>
+
+            <button id="paymentButton">Proceed to Payment</button>
+
+            <div class="cancelBox">
+                <a href="cancelOrder">Cancel Order</a> 
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
